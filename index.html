@@ -1,0 +1,2712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sajjad Top Amazon Deals | Best Amazon Finds & Home Decor Ideas</title>
+  <meta name="description" content="Discover the best curated Amazon home decor, kitchen gadgets, bedroom styling, and boho finds. Honest reviews, 4.5+ star rated products, and daily deals for US, UK, and worldwide buyers.">
+  <meta name="keywords" content="Amazon home decor, Amazon finds, boho home decor, kitchen gadgets, bedroom aesthetics, Amazon deals 2026, Sajjad Top Amazon Deals">
+  <meta name="author" content="Sajjad Top Amazon Deals">
+  <meta property="og:title" content="Sajjad Top Amazon Deals | Curated Home & Lifestyle Finds">
+  <meta property="og:description" content="Top rated Amazon home decor, kitchen gadgets, and lifestyle inspiration curated for your dream home.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Poppins (Headings) & Open Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CSS DESIGN TOKENS & RESET
+       ========================================================================== */
+    :root {
+      --primary: #B12704;         /* Amazon deep red */
+      --primary-dark: #8F1F03;
+      --primary-light: #FAECE8;
+      --accent: #FF6B00;          /* Warm vibrant orange */
+      --accent-hover: #E05E00;
+      --pinterest: #E60023;       /* Official Pinterest red */
+      --pinterest-hover: #B8001B;
+      --bg: #FFFFFF;
+      --bg-warm: #FAF8F5;         /* Warm inviting white/cream */
+      --bg-secondary: #F4F3EF;
+      --card-bg: #FFFFFF;
+      --text: #222222;
+      --text-muted: #666666;
+      --text-light: #888888;
+      --border: #E8E5DF;
+      --border-light: #F0EFEA;
+      --success: #067D62;         /* Amazon badge green */
+      --success-bg: #E7F4EE;
+      --warning-bg: #FFF8E7;       /* Amazon disclosure yellow */
+      --warning-border: #F3CA63;
+      --warning-text: #593C00;
+      --stars: #FFA41C;           /* Amazon rating gold */
+      --prime-blue: #00A8E1;
+      --shadow-sm: 0 2px 6px rgba(0,0,0,0.05);
+      --shadow-md: 0 6px 18px rgba(0,0,0,0.08);
+      --shadow-lg: 0 12px 30px rgba(0,0,0,0.12);
+      --shadow-lift: 0 16px 36px rgba(177,39,4,0.14);
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-full: 9999px;
+      --transition: all 0.25s ease-in-out;
+      --max-width: 1200px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-warm);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button, input, textarea {
+      font-family: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ==========================================================================
+       1. TOP ANNOUNCEMENT BAR
+       ========================================================================== */
+    .announcement-bar {
+      background-color: var(--primary);
+      color: #FFFFFF;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      z-index: 1001;
+    }
+
+    .announcement-bar .inner-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .announcement-bar a.pin-btn {
+      background: #FFFFFF;
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+
+    .announcement-bar a.pin-btn:hover {
+      background-color: var(--accent);
+      color: #FFFFFF;
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================================================
+       2. HEADER & NAVIGATION
+       ========================================================================== */
+    .site-header {
+      background-color: #FFFFFF;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .site-header.scrolled {
+      box-shadow: var(--shadow-md);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      color: #FFFFFF;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 10px rgba(177,39,4,0.25);
+    }
+
+    .logo-text-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .logo-title span {
+      color: var(--primary);
+    }
+
+    .logo-tagline {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    /* Navigation Links */
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary);
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--primary);
+      border-radius: 2px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn-pinterest-header {
+      background-color: var(--pinterest);
+      color: #FFFFFF;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(230,0,35,0.25);
+    }
+
+    .btn-pinterest-header:hover {
+      background-color: var(--pinterest-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(230,0,35,0.35);
+    }
+
+    /* Mobile Hamburger */
+    .mobile-menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      color: var(--text);
+      cursor: pointer;
+      padding: 6px;
+    }
+
+    /* Mobile Navigation Drawer */
+    .mobile-drawer {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 2000;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-drawer.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-drawer-content {
+      width: 290px;
+      height: 100%;
+      background: #FFFFFF;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(-100%);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .mobile-drawer.open .mobile-drawer-content {
+      transform: translateX(0);
+    }
+
+    .mobile-drawer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .mobile-close-btn {
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .mobile-nav-link {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      display: block;
+      padding: 6px 0;
+    }
+
+    .mobile-nav-link:hover, .mobile-nav-link.active {
+      color: var(--primary);
+    }
+
+    /* ==========================================================================
+       3. HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-warm) 100%);
+      padding: 60px 0 50px;
+      position: relative;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 20px;
+    }
+
+    .hero-headline {
+      font-size: 2.85rem;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.18;
+      margin-bottom: 18px;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-headline span.highlight {
+      color: var(--primary);
+      position: relative;
+      display: inline-block;
+    }
+
+    .hero-subheading {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 540px;
+      line-height: 1.6;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+
+    .btn-primary-cta {
+      background: linear-gradient(135deg, var(--primary) 0%, #D4380D 100%);
+      color: #FFFFFF;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 6px 20px rgba(177,39,4,0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-primary-cta:hover {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(177,39,4,0.4);
+    }
+
+    .btn-secondary-cta {
+      background-color: #FFFFFF;
+      color: var(--pinterest);
+      border: 2px solid var(--pinterest);
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 12px 26px;
+      border-radius: var(--radius-md);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-secondary-cta:hover {
+      background-color: var(--pinterest);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(230,0,35,0.25);
+    }
+
+    /* Trust micro-stats in Hero */
+    .hero-trust-stats {
+      display: flex;
+      gap: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-number {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Hero Lifestyle Graphic Mock */
+    .hero-image-wrapper {
+      position: relative;
+    }
+
+    .hero-lifestyle-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+
+    .hero-decor-scene {
+      height: 360px;
+      background: linear-gradient(145deg, #FDEFE7 0%, #F5EDE6 50%, #ECE3DA 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-decor-scene::before {
+      content: '';
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(255,107,0,0.12) 0%, rgba(255,255,255,0) 70%);
+      top: -40px;
+      right: -40px;
+    }
+
+    .scene-emojis {
+      font-size: 4.8rem;
+      margin-bottom: 15px;
+      filter: drop-shadow(0 8px 12px rgba(0,0,0,0.1));
+      animation: float 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-8px); }
+    }
+
+    .scene-caption {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #332B25;
+      margin-bottom: 6px;
+    }
+
+    .scene-sub {
+      font-size: 0.85rem;
+      color: #7A6F66;
+      max-width: 280px;
+    }
+
+    .hero-floating-badge {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      padding: 10px 16px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(255,255,255,0.8);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-floating-badge .check-circle {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--success);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .floating-badge-text {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .floating-badge-sub {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       4. AFFILIATE DISCLOSURE BANNER
+       ========================================================================== */
+    .disclosure-banner {
+      background-color: var(--warning-bg);
+      border-top: 1px solid var(--warning-border);
+      border-bottom: 1px solid var(--warning-border);
+      padding: 12px 20px;
+      color: var(--warning-text);
+      font-size: 0.85rem;
+      line-height: 1.45;
+    }
+
+    .disclosure-banner-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .disclosure-banner-icon {
+      font-size: 1.1rem;
+    }
+
+    .disclosure-banner a {
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .disclosure-banner a:hover {
+      color: var(--primary-dark);
+    }
+
+    /* ==========================================================================
+       SECTION COMMONS
+       ========================================================================== */
+    .section-padding {
+      padding: 70px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 2.15rem;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    /* ==========================================================================
+       5. FEATURED PRODUCTS SECTION (Pinterest-inspired cards)
+       ========================================================================== */
+    .featured-products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lift);
+      border-color: #E2C4B8;
+    }
+
+    .product-card-top {
+      position: relative;
+      background: linear-gradient(135deg, #FAF7F2 0%, #F3EDE3 100%);
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border-light);
+      overflow: hidden;
+    }
+
+    .product-card-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .badge-choice {
+      background-color: #232F3E;
+      color: #FFFFFF;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .badge-choice span {
+      color: #FF9900;
+    }
+
+    .badge-bestseller {
+      background-color: #E67A00;
+      color: #FFFFFF;
+      box-shadow: 0 2px 6px rgba(230,122,0,0.3);
+    }
+
+    .badge-discount {
+      background-color: var(--primary);
+      color: #FFFFFF;
+      box-shadow: 0 2px 6px rgba(177,39,4,0.3);
+    }
+
+    .category-badge-chip {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      background: rgba(255,255,255,0.92);
+      color: var(--text-muted);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border);
+    }
+
+    .product-emoji-visual {
+      font-size: 5.4rem;
+      transition: transform 0.3s ease;
+      user-select: none;
+    }
+
+    .product-card:hover .product-emoji-visual {
+      transform: scale(1.08);
+    }
+
+    .product-card-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-title {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.35;
+      margin-bottom: 10px;
+      min-height: 48px;
+    }
+
+    .product-rating-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .star-group {
+      color: var(--stars);
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+    }
+
+    .rating-score {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .review-count {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .product-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .product-price {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .product-old-price {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      text-decoration: line-through;
+    }
+
+    .ships-from-amazon {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      color: var(--success);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .ships-from-amazon .amazon-check {
+      background: var(--success-bg);
+      color: var(--success);
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+    }
+
+    .btn-amazon-shop {
+      margin-top: auto;
+      background-color: var(--primary);
+      color: #FFFFFF;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 13px 20px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(177,39,4,0.25);
+      border: 1px solid var(--primary-dark);
+      cursor: pointer;
+    }
+
+    .btn-amazon-shop:hover {
+      background-color: var(--primary-dark);
+      box-shadow: 0 6px 16px rgba(177,39,4,0.35);
+      color: #FFFFFF;
+    }
+
+    .amazon-tagline-micro {
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--text-light);
+      margin-top: 8px;
+    }
+
+    /* ==========================================================================
+       6. CATEGORIES SECTION
+       ========================================================================== */
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 20px;
+    }
+
+    .category-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 26px 18px;
+      text-align: center;
+      transition: var(--transition);
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .category-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent);
+    }
+
+    .category-icon-wrapper {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: var(--bg-warm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+      transition: var(--transition);
+      border: 1px solid var(--border-light);
+    }
+
+    .category-card:hover .category-icon-wrapper {
+      background: var(--primary-light);
+      transform: scale(1.1);
+    }
+
+    .category-name {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .category-count {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       7. WHY TRUST US SECTION
+       ========================================================================== */
+    .why-trust-section {
+      background-color: #FFFFFF;
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .trust-boxes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .trust-box {
+      background: var(--bg-warm);
+      border-radius: var(--radius-md);
+      padding: 30px 24px;
+      border: 1px solid var(--border);
+      text-align: left;
+      transition: var(--transition);
+    }
+
+    .trust-box:hover {
+      transform: translateY(-4px);
+      border-color: #D1C9BE;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .trust-icon-box {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+    .trust-box-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .trust-box-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       8. PINTEREST SECTION
+       ========================================================================== */
+    .pinterest-section {
+      background: linear-gradient(180deg, #FBF8F7 0%, #F5EDED 100%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pinterest-cta-wrapper {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .btn-pinterest-large {
+      background-color: var(--pinterest);
+      color: #FFFFFF;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 15px 36px;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 8px 24px rgba(230,0,35,0.3);
+      transition: var(--transition);
+    }
+
+    .btn-pinterest-large:hover {
+      background-color: var(--pinterest-hover);
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(230,0,35,0.4);
+      color: #FFFFFF;
+    }
+
+    .pins-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 26px;
+    }
+
+    .pin-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pin-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .pin-thumbnail {
+      height: 220px;
+      background: linear-gradient(135deg, #F9EDE9 0%, #EFE5DD 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .pin-badge-top {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(230,0,35,0.9);
+      color: #FFFFFF;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      font-size: 0.72rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .pin-emoji {
+      font-size: 4rem;
+      margin-bottom: 8px;
+    }
+
+    .pin-meta-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #795548;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .pin-card-body {
+      padding: 20px;
+    }
+
+    .pin-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .pin-stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .pin-saves {
+      color: var(--pinterest);
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       9. LATEST BLOG POSTS SECTION
+       ========================================================================== */
+    .blog-posts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .blog-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: #D9D2C7;
+    }
+
+    .blog-thumbnail {
+      height: 200px;
+      background: linear-gradient(135deg, #F3F1EC 0%, #E8E5DD 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .blog-emoji-preview {
+      font-size: 3.8rem;
+    }
+
+    .blog-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: #FFFFFF;
+      color: var(--primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      text-transform: uppercase;
+    }
+
+    .blog-card-content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .blog-date {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      margin-bottom: 8px;
+    }
+
+    .blog-card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.35;
+      color: var(--text);
+    }
+
+    .blog-excerpt {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .btn-read-more {
+      color: var(--primary);
+      font-size: 0.9rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    .btn-read-more:hover {
+      color: var(--accent);
+      gap: 10px;
+    }
+
+    /* ==========================================================================
+       10. NEWSLETTER / FOLLOW SECTION
+       ========================================================================== */
+    .newsletter-section {
+      background: linear-gradient(135deg, #1C1A18 0%, #2D2723 100%);
+      color: #FFFFFF;
+      padding: 65px 0;
+      position: relative;
+    }
+
+    .newsletter-card {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .newsletter-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 107, 0, 0.2);
+      color: #FF9B4D;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .newsletter-title {
+      color: #FFFFFF;
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .newsletter-desc {
+      color: #CCCCCC;
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .newsletter-action-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      width: 100%;
+      max-width: 500px;
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 4px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    .newsletter-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 12px 18px;
+      font-size: 0.95rem;
+      border-radius: var(--radius-md);
+    }
+
+    .newsletter-submit-btn {
+      background: var(--accent);
+      color: #FFFFFF;
+      border: none;
+      outline: none;
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .newsletter-submit-btn:hover {
+      background: var(--accent-hover);
+    }
+
+    .or-divider {
+      font-size: 0.85rem;
+      color: #999999;
+      position: relative;
+      width: 100%;
+      max-width: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .or-divider::before, .or-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #444444;
+      margin: 0 10px;
+    }
+
+    /* ==========================================================================
+       11. FOOTER
+       ========================================================================== */
+    .site-footer {
+      background-color: #161514;
+      color: #BBBBBB;
+      padding: 70px 0 30px;
+      border-top: 1px solid #282624;
+      margin-top: auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .footer-col-brand .logo-container {
+      margin-bottom: 16px;
+    }
+
+    .footer-col-brand .logo-title {
+      color: #FFFFFF;
+    }
+
+    .footer-col-brand .logo-tagline {
+      color: #888888;
+    }
+
+    .footer-brand-bio {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: #999999;
+      margin-bottom: 20px;
+    }
+
+    .footer-social-links {
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-icon-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #282522;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: var(--transition);
+    }
+
+    .social-icon-btn:hover {
+      background: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .footer-heading {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .footer-heading::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: var(--accent);
+    }
+
+    .footer-links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links-list a {
+      font-size: 0.88rem;
+      color: #AAAAAA;
+    }
+
+    .footer-links-list a:hover {
+      color: #FFFFFF;
+      padding-left: 4px;
+    }
+
+    .footer-disclosure-block {
+      background: #211E1B;
+      padding: 22px;
+      border-radius: var(--radius-sm);
+      border-left: 4px solid var(--accent);
+      margin-bottom: 40px;
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: #A09D97;
+    }
+
+    .footer-disclosure-block strong {
+      color: #FFFFFF;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 24px;
+      border-top: 1px solid #2B2824;
+      font-size: 0.82rem;
+      color: #777777;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 18px;
+    }
+
+    .footer-bottom-links a:hover {
+      color: #FFFFFF;
+    }
+
+    /* ==========================================================================
+       SUB-PAGES (SPA VIEW ARCHITECTURE)
+       ========================================================================== */
+    .page-view {
+      display: none;
+      padding: 60px 0 80px;
+      min-height: 60vh;
+    }
+
+    .page-view.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-header-banner {
+      background: linear-gradient(135deg, #FFFFFF 0%, var(--bg-secondary) 100%);
+      padding: 40px 0;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .page-header-title {
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .page-header-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .content-article {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      padding: 45px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .content-article h2 {
+      font-size: 1.5rem;
+      margin-top: 32px;
+      margin-bottom: 14px;
+      color: var(--text);
+      border-bottom: 2px solid var(--bg-warm);
+      padding-bottom: 8px;
+    }
+
+    .content-article h3 {
+      font-size: 1.2rem;
+      margin-top: 22px;
+      margin-bottom: 10px;
+    }
+
+    .content-article p {
+      font-size: 0.96rem;
+      color: #444444;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .content-article ul, .content-article ol {
+      margin-left: 24px;
+      margin-bottom: 20px;
+      color: #444444;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .content-article li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background: var(--bg-warm);
+      border-left: 4px solid var(--primary);
+      padding: 18px 22px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 24px 0;
+      font-size: 0.92rem;
+    }
+
+    /* Contact Form */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 40px;
+    }
+
+    .contact-info-panel {
+      background: var(--bg-warm);
+      padding: 36px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .contact-icon {
+      font-size: 1.6rem;
+      color: var(--primary);
+    }
+
+    .contact-form {
+      background: #FFFFFF;
+      padding: 36px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 0.95rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      outline: none;
+      transition: var(--transition);
+      background-color: #FAF9F6;
+    }
+
+    .form-control:focus {
+      border-color: var(--primary);
+      background-color: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(177,39,4,0.12);
+    }
+
+    .btn-submit-contact {
+      background: var(--primary);
+      color: #FFFFFF;
+      border: none;
+      padding: 14px 28px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(177,39,4,0.25);
+    }
+
+    .btn-submit-contact:hover {
+      background: var(--primary-dark);
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      background: #FFFFFF;
+      color: var(--primary);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow-md);
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 999;
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background: var(--primary);
+      color: #FFFFFF;
+      transform: translateY(-3px);
+    }
+
+    /* Toast Notification */
+    .toast-notice {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #1F1D1B;
+      color: #FFFFFF;
+      padding: 14px 24px;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-lg);
+      z-index: 3000;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+
+    .toast-notice.active {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .hero-lifestyle-card {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu, .header-actions {
+        display: none;
+      }
+      .mobile-menu-toggle {
+        display: block;
+      }
+      .hero-headline {
+        font-size: 2.2rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .content-article {
+        padding: 26px 20px;
+      }
+      .page-header-title {
+        font-size: 2rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-bottom-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. TOP ANNOUNCEMENT BAR
+       ========================================================================== -->
+  <section class="announcement-bar" id="announcementBar">
+    <div class="inner-wrap">
+      <span>🔥 New Amazon Deals Added Daily! Follow us on Pinterest!</span>
+      <a href="https://www.pinterest.com/sajjadtopdeals/" target="_blank" rel="noopener noreferrer" class="pin-btn">
+        📌 Follow on Pinterest
+      </a>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. HEADER & STICKY NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <a href="#home" class="logo-container" onclick="showPage('home');">
+        <div class="logo-icon" aria-hidden="true">🏠</div>
+        <div class="logo-text-group">
+          <span class="logo-title">Sajjad <span>Top Deals</span></span>
+          <span class="logo-tagline">Best Amazon Finds &amp; Home Decor</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active" onclick="showPage('home');">Home</a></li>
+          <li><a href="#about" class="nav-link" onclick="showPage('about');">About Us</a></li>
+          <li><a href="#contact" class="nav-link" onclick="showPage('contact');">Contact Us</a></li>
+          <li><a href="#disclosure" class="nav-link" onclick="showPage('disclosure');">Affiliate Disclosure</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action / Pinterest Button -->
+      <div class="header-actions">
+        <a href="https://www.pinterest.com/sajjadtopdeals/" target="_blank" rel="noopener noreferrer" class="btn-pinterest-header">
+          📌 Follow Pinterest
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Off-Canvas Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <div class="logo-container">
+          <div class="logo-icon" style="width:36px;height:36px;font-size:1.2rem;">🏠</div>
+          <span class="logo-title" style="font-size:1.1rem;">Sajjad <span>Top Deals</span></span>
+        </div>
+        <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link" onclick="showPage('home'); closeMobileMenu();">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link" onclick="showPage('about'); closeMobileMenu();">About Us</a></li>
+        <li><a href="#contact" class="mobile-nav-link" onclick="showPage('contact'); closeMobileMenu();">Contact Us</a></li>
+        <li><a href="#disclosure" class="mobile-nav-link" onclick="showPage('disclosure'); closeMobileMenu();">Affiliate Disclosure</a></li>
+        <li><a href="#privacy" class="mobile-nav-link" onclick="showPage('privacy'); closeMobileMenu();">Privacy Policy</a></li>
+        <li style="margin-top: 15px;">
+          <a href="https://www.pinterest.com/sajjadtopdeals/" target="_blank" rel="noopener noreferrer" class="btn-pinterest-header" style="justify-content:center; width:100%;">
+            📌 Follow on Pinterest
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       VIEW: HOMEPAGE (Default active page)
+       ========================================================================== -->
+  <main id="home-view" class="page-view active">
+
+    <!-- 3. HERO SECTION -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge-pill">
+              ✨ 2026 Home &amp; Lifestyle Curation
+            </div>
+            <h1 class="hero-headline">
+              Discover the <span class="highlight">Best Amazon Deals</span> for Your Home
+            </h1>
+            <p class="hero-subheading">
+              Curated product picks loved by thousands of buyers worldwide. We research, test, and hand-select 4.5+ star home decor and kitchen wonders so you save time and money.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#featured-deals" class="btn-primary-cta">
+                🛒 Shop Amazon Deals
+              </a>
+              <a href="https://www.pinterest.com/sajjadtopdeals/" target="_blank" rel="noopener noreferrer" class="btn-secondary-cta">
+                📌 Follow on Pinterest
+              </a>
+            </div>
+            <div class="hero-trust-stats">
+              <div class="stat-item">
+                <span class="stat-number">4.5+ ⭐</span>
+                <span class="stat-label">Min Rating Verified</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10K+</span>
+                <span class="stat-label">Monthly Readers</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Amazon Verified Deals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Lifestyle Visual Graphic -->
+          <div class="hero-image-wrapper">
+            <div class="hero-lifestyle-card">
+              <div class="hero-decor-scene">
+                <div class="scene-emojis">🛋️ 🌿 🕯️</div>
+                <div class="scene-caption">Warm Boho Living Room Aesthetics</div>
+                <div class="scene-sub">Curated accents, atmospheric lighting &amp; luxury comfort under $50</div>
+              </div>
+              <div class="hero-floating-badge">
+                <div class="check-circle">✓</div>
+                <div>
+                  <div class="floating-badge-text">Prime Fast Delivery</div>
+                  <div class="floating-badge-sub">Eligible on top picks</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. AFFILIATE DISCLOSURE BANNER -->
+    <section class="disclosure-banner">
+      <div class="container disclosure-banner-inner">
+        <span class="disclosure-banner-icon">ℹ️</span>
+        <span>
+          <strong>Affiliate Transparency:</strong> This site contains affiliate links. We earn a small commission at no extra cost to you when you purchase through our links.
+        </span>
+        <a href="#disclosure" onclick="showPage('disclosure');">Learn more &rarr;</a>
+      </div>
+    </section>
+
+    <!-- 5. FEATURED PRODUCTS SECTION -->
+    <section class="section-padding" id="featured-deals">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Hand-Picked Editor's Choice</span>
+          <h2 class="section-title">Today's Top Amazon Finds 🏠</h2>
+          <p class="section-subtitle">
+            Every product is handpicked based on high buyer satisfaction, customer praise, and unbeatable value on Amazon.
+          </p>
+        </div>
+
+        <div class="featured-products-grid">
+          <!-- PRODUCT 1: Pigort Metal Flowers Wall Art -->
+          <article class="product-card">
+            <div class="product-card-top">
+              <span class="product-card-badge badge-choice">Amazon's <span>Choice</span></span>
+              <span class="category-badge-chip">Wall Art</span>
+              <div class="product-emoji-visual" role="img" aria-label="Metal Flowers Wall Art">🌸</div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-title">Pigort Metal Flowers Wall Art</h3>
+              <div class="product-rating-row">
+                <div class="star-group" aria-label="4.6 out of 5 stars">★★★★★</div>
+                <span class="rating-score">4.6</span>
+                <span class="review-count">(2,987 reviews)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price">$19.99</span>
+                <span class="product-old-price">$26.99</span>
+              </div>
+              <div class="ships-from-amazon">
+                <span class="amazon-check">✓</span>
+                <span>Ships from Amazon &bull; Prime Eligible</span>
+              </div>
+              <a href="https://www.amazon.com/dp/B08XYZDEMO/?tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored" class="btn-amazon-shop">
+                Shop on Amazon &rarr;
+              </a>
+              <div class="amazon-tagline-micro">Affiliate Link: Tag #sajjadtopdeal-20</div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 2: Dreamy Fairy Light Curtain -->
+          <article class="product-card">
+            <div class="product-card-top">
+              <span class="product-card-badge badge-bestseller">Best Seller #1</span>
+              <span class="category-badge-chip">Cozy Lighting</span>
+              <div class="product-emoji-visual" role="img" aria-label="Fairy Light Curtain">✨</div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-title">Dreamy Fairy Light Curtain</h3>
+              <div class="product-rating-row">
+                <div class="star-group" aria-label="4.6 out of 5 stars">★★★★★</div>
+                <span class="rating-score">4.6</span>
+                <span class="review-count">(13,200+ reviews)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price">$19.99</span>
+                <span class="product-old-price">$29.99</span>
+              </div>
+              <div class="ships-from-amazon">
+                <span class="amazon-check">✓</span>
+                <span>Ships from Amazon &bull; 8 Lighting Modes</span>
+              </div>
+              <a href="https://www.amazon.com/dp/B07XYZDEMO/?tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored" class="btn-amazon-shop">
+                Shop on Amazon &rarr;
+              </a>
+              <div class="amazon-tagline-micro">Affiliate Link: Tag #sajjadtopdeal-20</div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 3: Cozy Fall Comforter Set -->
+          <article class="product-card">
+            <div class="product-card-top">
+              <span class="product-card-badge badge-discount">20% OFF</span>
+              <span class="category-badge-chip">Bedding</span>
+              <div class="product-emoji-visual" role="img" aria-label="Cozy Fall Comforter Set">🛏️</div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-title">Cozy Fall Comforter Set</h3>
+              <div class="product-rating-row">
+                <div class="star-group" aria-label="4.4 out of 5 stars">★★★★☆</div>
+                <span class="rating-score">4.4</span>
+                <span class="review-count">(4,812 reviews)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price">$47.19</span>
+                <span class="product-old-price">$58.99</span>
+              </div>
+              <div class="ships-from-amazon">
+                <span class="amazon-check">✓</span>
+                <span>Ships from Amazon &bull; Ultra Soft Microfiber</span>
+              </div>
+              <a href="https://www.amazon.com/dp/B09XYZDEMO/?tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored" class="btn-amazon-shop">
+                Shop on Amazon &rarr;
+              </a>
+              <div class="amazon-tagline-micro">Affiliate Link: Tag #sajjadtopdeal-20</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CATEGORIES SECTION -->
+    <section class="section-padding" style="background-color:#FFFFFF;" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Browse by Department</span>
+          <h2 class="section-title">Shop by Category</h2>
+          <p class="section-subtitle">Find exactly what you need to transform every room into a warm, comfortable sanctuary.</p>
+        </div>
+
+        <div class="categories-grid">
+          <!-- Category 1 -->
+          <a href="https://www.amazon.com/s?k=home+decor&tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored" class="category-card">
+            <div class="category-icon-wrapper">🏠</div>
+            <div class="category-name">Home Decor</div>
+            <span class="category-count">120+ Curated Deals</span>
+          </a>
+
+          <!-- Category 2 -->
+          <a href="https://www.amazon.com/s?k=kitchen+gadgets&tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored" class="category-card">
+            <div class="category-icon-wrapper">🍳</div>
+            <div class="category-name">Kitchen Gadgets</div>
+            <span class="category-count">85+ Curated Deals</span>
+          </a>
+
+          <!-- Category 3 -->
+          <a href="https://www.amazon.com/s?k=bedroom+decor&tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored" class="category-card">
+            <div class="category-icon-wrapper">🛏️</div>
+            <div class="category-name">Bedroom Decor</div>
+            <span class="category-count">94+ Curated Deals</span>
+          </a>
+
+          <!-- Category 4 -->
+          <a href="https://www.amazon.com/s?k=home+lighting&tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored" class="category-card">
+            <div class="category-icon-wrapper">💡</div>
+            <div class="category-name">Lighting</div>
+            <span class="category-count">60+ Curated Deals</span>
+          </a>
+
+          <!-- Category 5 -->
+          <a href="https://www.amazon.com/s?k=home+gift+ideas&tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored" class="category-card">
+            <div class="category-icon-wrapper">🎁</div>
+            <div class="category-name">Gift Ideas</div>
+            <span class="category-count">110+ Curated Deals</span>
+          </a>
+
+          <!-- Category 6 -->
+          <a href="https://www.amazon.com/s?k=boho+home+decor&tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored" class="category-card">
+            <div class="category-icon-wrapper">🌿</div>
+            <div class="category-name">Boho Style</div>
+            <span class="category-count">75+ Curated Deals</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. WHY TRUST US SECTION -->
+    <section class="section-padding why-trust-section" id="why-trust-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Editorial Commitment</span>
+          <h2 class="section-title">Why Shop Through Our Links?</h2>
+          <p class="section-subtitle">We believe shopping for home aesthetics on Amazon should be effortless, delightful, and risk-free.</p>
+        </div>
+
+        <div class="trust-boxes-grid">
+          <div class="trust-box">
+            <div class="trust-icon-box">✅</div>
+            <h3 class="trust-box-title">Personally Researched Products</h3>
+            <p class="trust-box-desc">
+              We sift through thousands of Amazon items, inspect real customer photos, and test build qualities so only genuine winners make our list.
+            </p>
+          </div>
+
+          <div class="trust-box">
+            <div class="trust-icon-box">⭐</div>
+            <h3 class="trust-box-title">Only 4.5+ Star Products</h3>
+            <p class="trust-box-desc">
+              We filter out low-rated items and fake-review fluff. Every item featured boasts authentic high ratings and verified buyer reviews.
+            </p>
+          </div>
+
+          <div class="trust-box">
+            <div class="trust-icon-box">💰</div>
+            <h3 class="trust-box-title">Best Value for Money</h3>
+            <p class="trust-box-desc">
+              Get luxury hotel looks and Pinterest aesthetics without designer price tags. We track daily price drops, coupons, and lightning sales.
+            </p>
+          </div>
+
+          <div class="trust-box">
+            <div class="trust-icon-box">🚚</div>
+            <h3 class="trust-box-title">Fast Amazon Delivery</h3>
+            <p class="trust-box-desc">
+              All items ship directly through Amazon's world-class fulfillment network with Prime expedited delivery and hassle-free returns.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. PINTEREST SECTION -->
+    <section class="section-padding pinterest-section" id="pinterest">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="color:var(--pinterest);">Visual Inspiration Hub</span>
+          <h2 class="section-title">Follow Us on Pinterest</h2>
+          <p class="section-subtitle">Get daily Amazon finds, mood boards, and home decor aesthetic inspiration delivered straight to your feed!</p>
+        </div>
+
+        <div class="pinterest-cta-wrapper">
+          <a href="https://www.pinterest.com/sajjadtopdeals/" target="_blank" rel="noopener noreferrer" class="btn-pinterest-large">
+            📌 Follow @sajjadtopdeals on Pinterest
+          </a>
+        </div>
+
+        <!-- 3 Pin Preview Cards -->
+        <div class="pins-grid">
+          <!-- Pin 1 -->
+          <div class="pin-card">
+            <div class="pin-thumbnail">
+              <div class="pin-badge-top">📌 Pin</div>
+              <div class="pin-emoji">🛋️</div>
+              <span class="pin-meta-tag">Boho Living Room</span>
+            </div>
+            <div class="pin-card-body">
+              <h3 class="pin-title">10 Amazon Living Room Upgrades Under $30</h3>
+              <p style="font-size:0.85rem; color:var(--text-muted);">
+                Chic macrame wall hangings, textured cushions, and warm ambient light strips that bring immediate warmth.
+              </p>
+              <div class="pin-stats">
+                <span class="pin-saves">❤️ 1.4k Saves</span>
+                <span>pinterest.com/sajjadtopdeals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pin 2 -->
+          <div class="pin-card">
+            <div class="pin-thumbnail">
+              <div class="pin-badge-top">📌 Pin</div>
+              <div class="pin-emoji">☕</div>
+              <span class="pin-meta-tag">Kitchen Essentials</span>
+            </div>
+            <div class="pin-card-body">
+              <h3 class="pin-title">Viral TikTok Kitchen Gadgets You Need</h3>
+              <p style="font-size:0.85rem; color:var(--text-muted);">
+                Aesthetic glass dispensers, electric milk frothers, and magnetic spice rack organizers everyone is raving about.
+              </p>
+              <div class="pin-stats">
+                <span class="pin-saves">❤️ 3.8k Saves</span>
+                <span>pinterest.com/sajjadtopdeals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pin 3 -->
+          <div class="pin-card">
+            <div class="pin-thumbnail">
+              <div class="pin-badge-top">📌 Pin</div>
+              <div class="pin-emoji">🕯️</div>
+              <span class="pin-meta-tag">Cozy Bedroom Decor</span>
+            </div>
+            <div class="pin-card-body">
+              <h3 class="pin-title">How to Style a Hotel-Quality Bed On a Budget</h3>
+              <p style="font-size:0.85rem; color:var(--text-muted);">
+                The secret Amazon down-alternative insert, washed linen duvet covers, and accent throw blankets for cloud-like sleep.
+              </p>
+              <div class="pin-stats">
+                <span class="pin-saves">❤️ 2.1k Saves</span>
+                <span>pinterest.com/sajjadtopdeals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. LATEST BLOG POSTS SECTION -->
+    <section class="section-padding" style="background-color:#FFFFFF;" id="blog">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">In-Depth Guides &amp; Reviews</span>
+          <h2 class="section-title">Latest Amazon Reviews</h2>
+          <p class="section-subtitle">Real comparisons, buyer recommendations, and interior design styling tips from our blog.</p>
+        </div>
+
+        <div class="blog-posts-grid">
+          <!-- Blog Card 1 -->
+          <article class="blog-card">
+            <div class="blog-thumbnail">
+              <span class="blog-badge">Home Decor</span>
+              <div class="blog-emoji-preview">🖼️</div>
+            </div>
+            <div class="blog-card-content">
+              <span class="blog-date">September 2026 &bull; 4 min read</span>
+              <h3 class="blog-card-title">Top 7 Amazon Wall Decor Ideas That Look Custom Made</h3>
+              <p class="blog-excerpt">
+                Tired of bare drywall? Discover hand-finished botanical prints, floating wooden shelves, and gold-trimmed metal mirrors that elevate your entryway.
+              </p>
+              <a href="https://sajjadtopdeals.blogspot.com/" target="_blank" rel="noopener noreferrer" class="btn-read-more">
+                Read Full Review &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Blog Card 2 -->
+          <article class="blog-card">
+            <div class="blog-thumbnail">
+              <span class="blog-badge">Kitchen Finds</span>
+              <div class="blog-emoji-preview">🍳</div>
+            </div>
+            <div class="blog-card-content">
+              <span class="blog-date">September 2026 &bull; 6 min read</span>
+              <h3 class="blog-card-title">5 Kitchen Gadgets Under $25 That Saved My Weeknight Dinners</h3>
+              <p class="blog-excerpt">
+                From silicone food huggers to multi-blade vegetable choppers, these are the highest-rated Amazon kitchen helpers worth every penny.
+              </p>
+              <a href="https://sajjadtopdeals.blogspot.com/" target="_blank" rel="noopener noreferrer" class="btn-read-more">
+                Read Full Review &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Blog Card 3 -->
+          <article class="blog-card">
+            <div class="blog-thumbnail">
+              <span class="blog-badge">Bedroom Aesthetic</span>
+              <div class="blog-emoji-preview">🛏️</div>
+            </div>
+            <div class="blog-card-content">
+              <span class="blog-date">September 2026 &bull; 5 min read</span>
+              <h3 class="blog-card-title">The Ultimate Farmhouse &amp; Boho Bedroom Makeover Guide</h3>
+              <p class="blog-excerpt">
+                Step-by-step breakdown of how to blend natural textures, cozy earthen blankets, and warm fairy lights for an Instagram-worthy bedroom.
+              </p>
+              <a href="https://sajjadtopdeals.blogspot.com/" target="_blank" rel="noopener noreferrer" class="btn-read-more">
+                Read Full Review &rarr;
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. NEWSLETTER / FOLLOW SECTION -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-card">
+          <div class="newsletter-badge">⚡ VIP Deal Alerts</div>
+          <h2 class="newsletter-title">Never Miss a Deal!</h2>
+          <p class="newsletter-desc">
+            Follow us on Pinterest for daily Amazon finds, lightning price drops, and curated home decor inspiration!
+          </p>
+          <div class="newsletter-action-group">
+            <a href="https://www.pinterest.com/sajjadtopdeals/" target="_blank" rel="noopener noreferrer" class="btn-pinterest-large">
+              📌 Follow Us on Pinterest
+            </a>
+            <div class="or-divider">OR GET ALERTS IN INBOX</div>
+            <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event);">
+              <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
+              <button type="submit" class="newsletter-submit-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       VIEW: ABOUT US PAGE
+       ========================================================================== -->
+  <section id="about-view" class="page-view">
+    <div class="page-header-banner">
+      <div class="container">
+        <h1 class="page-header-title">About Sajjad Top Amazon Deals</h1>
+        <p class="page-header-subtitle">Empowering homeowners and decor enthusiasts across the US, UK, and worldwide to find quality Amazon treasures.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content-article">
+        <h2>Welcome to Sajjad Top Amazon Deals</h2>
+        <p>
+          At <strong>Sajjad Top Amazon Deals</strong>, we believe creating a warm, stylish, and welcoming home should not require an interior designer budget or hours of endless scrolling through counterfeit listings.
+        </p>
+        <p>
+          With millions of products listed on Amazon, distinguishing truly well-made items from cheap replicas has become a daunting task. That is where we step in. Founded by home decor and lifestyle curator Sajjad, our platform is dedicated to uncovering genuine, high-rating, buyer-tested Amazon home essentials.
+        </p>
+
+        <div class="highlight-box">
+          <strong>Our Core Mission:</strong> To provide honest, meticulously researched, and aesthetic Amazon lifestyle recommendations that help women and homemakers create spaces they love without overspending.
+        </div>
+
+        <h2>What We Specialize In</h2>
+        <ul>
+          <li><strong>Boho &amp; Farmhouse Home Decor:</strong> Textured wall hangings, botanical accents, ceramic vases, and warm lighting setups.</li>
+          <li><strong>Clever Kitchen Gadgets:</strong> Everyday tools and time-saving culinary organizers that simplify meal preparation.</li>
+          <li><strong>Serene Bedroom Comfort:</strong> Hotel-grade bedding, blackout drapery, fairy lights, and bedside aesthetic upgrades.</li>
+          <li><strong>Curated Gift Guides:</strong> Thoughtful, budget-conscious presents for housewarmings, birthdays, and holidays.</li>
+        </ul>
+
+        <h2>Our Rigorous 4-Step Selection Process</h2>
+        <ol>
+          <li><strong>Authentic Review Auditing:</strong> We scrutinize verified buyer feedback, eliminating items with suspicious spikes or generic automated ratings. Only products with 4.4+ stars and strong customer backing qualify.</li>
+          <li><strong>Build Quality &amp; Value Assessment:</strong> We evaluate materials, durability, and whether the item looks as gorgeous in real rooms as it does in product photography.</li>
+          <li><strong>Amazon Prime &amp; Return Security:</strong> We prioritize items fulfilled by Amazon with swift shipping and simple, risk-free returns.</li>
+          <li><strong>Community Curation:</strong> We track what our Pinterest audience of home lovers across the United States and United Kingdom is saving, repinning, and loving.</li>
+        </ol>
+
+        <h2>Connect With Us</h2>
+        <p>
+          Join our growing community on Pinterest at <a href="https://www.pinterest.com/sajjadtopdeals/" target="_blank" rel="noopener noreferrer" style="color:var(--pinterest);font-weight:700;">@sajjadtopdeals</a> or dive into our detailed long-form guides on our official blog at <a href="https://sajjadtopdeals.blogspot.com/" target="_blank" rel="noopener noreferrer" style="color:var(--primary);font-weight:700;">sajjadtopdeals.blogspot.com</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VIEW: CONTACT US PAGE
+       ========================================================================== -->
+  <section id="contact-view" class="page-view">
+    <div class="page-header-banner">
+      <div class="container">
+        <h1 class="page-header-title">Contact Us</h1>
+        <p class="page-header-subtitle">Have a question about a product recommendation or want your home brand reviewed? Reach out to us anytime!</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info-panel">
+          <h2 style="margin-bottom: 20px; font-size:1.5rem;">Get In Touch</h2>
+          <p style="color:var(--text-muted); margin-bottom: 28px;">
+            We love hearing from our readers and partners! Whether you have feedback, product suggestions, or business inquiries, our editorial team typically responds within 24 to 48 hours.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon">📌</div>
+            <div>
+              <strong style="display:block; color:var(--text);">Pinterest Community</strong>
+              <a href="https://www.pinterest.com/sajjadtopdeals/" target="_blank" rel="noopener noreferrer" style="color:var(--pinterest); font-size:0.9rem;">pinterest.com/sajjadtopdeals</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📝</div>
+            <div>
+              <strong style="display:block; color:var(--text);">Official Blog</strong>
+              <a href="https://sajjadtopdeals.blogspot.com/" target="_blank" rel="noopener noreferrer" style="color:var(--primary); font-size:0.9rem;">sajjadtopdeals.blogspot.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <strong style="display:block; color:var(--text);">Direct Email Inquiries</strong>
+              <span style="color:var(--text-muted); font-size:0.9rem;">contact@sajjadtopdeals.com</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">⏱️</div>
+            <div>
+              <strong style="display:block; color:var(--text);">Response Time</strong>
+              <span style="color:var(--text-muted); font-size:0.9rem;">Monday - Friday: 9am - 6pm EST</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2 style="margin-bottom: 20px; font-size:1.5rem;">Send Us a Message</h2>
+          <form onsubmit="handleContactSubmit(event);">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Your Full Name</label>
+              <input type="text" id="contactName" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="e.g. sarah@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactSubject">Inquiry Subject</label>
+              <input type="text" id="contactSubject" class="form-control" placeholder="e.g. Product Question / Collaboration" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Your Message</label>
+              <textarea id="contactMessage" class="form-control" rows="5" placeholder="Write your thoughts, questions, or review requests here..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit-contact">Send Message &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VIEW: PRIVACY POLICY PAGE
+       ========================================================================== -->
+  <section id="privacy-view" class="page-view">
+    <div class="page-header-banner">
+      <div class="container">
+        <h1 class="page-header-title">Privacy Policy</h1>
+        <p class="page-header-subtitle">Last updated: September 2026. How we protect and respect your data.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content-article">
+        <h2>1. Introduction &amp; Scope</h2>
+        <p>
+          Welcome to <strong>Sajjad Top Amazon Deals</strong> ("we", "our", or "us"). We respect your privacy and are committed to safeguarding your personal data in compliance with applicable data protection regulations including the US state laws and GDPR. This policy explains what data we collect, how it is used, and your rights when browsing our website.
+        </p>
+
+        <h2>2. Information We Collect</h2>
+        <p>
+          We do not require user account registration to read our reviews and browse product picks. We collect minimal data solely to optimize your experience:
+        </p>
+        <ul>
+          <li><strong>Log and Usage Data:</strong> Browser type, IP address, device operating system, referring URLs, and page navigation statistics gathered automatically by web servers.</li>
+          <li><strong>Voluntary Submissions:</strong> Your name and email address when you voluntarily subscribe to deal notifications or submit a contact inquiry.</li>
+          <li><strong>Cookies &amp; Tracking Pixels:</strong> We and third-party partners (such as Amazon Associates and Pinterest) utilize standard cookies to track affiliate referral attributions and measure content performance.</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>
+          The information we collect is used solely to:
+        </p>
+        <ul>
+          <li>Maintain, deliver, and optimize website speed and usability.</li>
+          <li>Send requested newsletters, deal notifications, and respond to your messages.</li>
+          <li>Track affiliate referral commissions through Amazon's verified Associates program.</li>
+          <li>Detect and prevent security incidents and fraudulent activity.</li>
+        </ul>
+
+        <h2>4. Amazon Associates &amp; Third-Party Links</h2>
+        <p>
+          Our website includes affiliate links to Amazon.com and affiliated international storefronts. When you click on these links, you will be redirected to Amazon, which operates under its own distinct Privacy Notice and Conditions of Use. Amazon may utilize cookies on your browser to track purchases made through our referral tag (<code>sajjadtopdeal-20</code>). We do not have access to your personal financial details, credit card numbers, or physical shipping addresses entered on Amazon.
+        </p>
+
+        <h2>5. Your Privacy Rights</h2>
+        <p>
+          Depending on your location (such as the EU/UK under GDPR or California under CCPA), you may have rights to access, rectify, or delete your personal communications data. To submit any privacy inquiries, please contact us at <code>contact@sajjadtopdeals.com</code>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VIEW: AFFILIATE DISCLOSURE PAGE
+       ========================================================================== -->
+  <section id="disclosure-view" class="page-view">
+    <div class="page-header-banner">
+      <div class="container">
+        <h1 class="page-header-title">Affiliate Disclosure</h1>
+        <p class="page-header-subtitle">Full FTC Compliance &amp; Amazon Associates Program Disclosure statement.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content-article">
+        <div class="highlight-box" style="border-left-color: var(--accent); background:#FFF9F0;">
+          <strong>Official Amazon Associates Statement:</strong><br>
+          "Sajjad Top Amazon Deals is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com and affiliated international Amazon sites."
+        </div>
+
+        <h2>Federal Trade Commission (FTC) Compliance</h2>
+        <p>
+          In compliance with the Federal Trade Commission’s 16 CFR § 255 regarding Guides Concerning the Use of Endorsements and Testimonials in Advertising, please assume that any and all links on <strong>Sajjad Top Amazon Deals</strong> that lead to Amazon.com or other merchants are affiliate links.
+        </p>
+        <p>
+          If you click on these links and make a purchase, we may receive a small monetary commission from the merchant at <strong>zero extra cost to you</strong>. The price you pay on Amazon remains identical whether you use our links or navigate there directly.
+        </p>
+
+        <h2>Our Amazon Tracking Tag</h2>
+        <p>
+          Our official Amazon Associates tracking ID is <strong><code>sajjadtopdeal-20</code></strong>. When you click an Amazon link on our site, this tag identifies that you discovered the item through our curated recommendations, allowing Amazon to reward our research efforts with a small referral fee.
+        </p>
+
+        <h2>Editorial Integrity &amp; Objectivity</h2>
+        <p>
+          Our product selections are never dictated by manufacturers or high commission rates. We maintain strict editorial autonomy:
+        </p>
+        <ul>
+          <li>We only feature items that we genuinely consider well-designed, reliable, and backed by high customer ratings (typically 4.4 stars or higher).</li>
+          <li>We do not accept paid placements or sponsored reviews that compromise our authentic opinion.</li>
+          <li>We continually update our picks to ensure items remain in stock and maintain favorable buyer sentiment.</li>
+        </ul>
+
+        <h2>Price &amp; Inventory Disclaimer</h2>
+        <p>
+          Prices and availability of products listed on this site are accurate as of the date and time indicated and are subject to change. Any price and availability information displayed on Amazon.com at the time of purchase will apply to the purchase of that product.
+        </p>
+        <p>
+          Certain content that appears on this site comes from Amazon Services LLC. This content is provided 'as is' and is subject to change or removal at any time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col-brand">
+          <a href="#home" class="logo-container" onclick="showPage('home');">
+            <div class="logo-icon" style="background:#B12704;">🏠</div>
+            <div class="logo-text-group">
+              <span class="logo-title">Sajjad <span>Top Deals</span></span>
+              <span class="logo-tagline">Best Amazon Finds &amp; Home Decor</span>
+            </div>
+          </a>
+          <p class="footer-brand-bio">
+            Your trusted destination for curated Amazon home aesthetics, kitchen upgrades, bedroom comforts, and boho chic decor. Serving home decor lovers across the US, UK, and worldwide.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.pinterest.com/sajjadtopdeals/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Pinterest" style="background:var(--pinterest);">
+              📌
+            </a>
+            <a href="https://sajjadtopdeals.blogspot.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Blogspot" style="background:var(--primary);">
+              📝
+            </a>
+            <a href="https://www.amazon.com/?tag=sajjadtopdeal-20" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Amazon Storefront" style="background:#232F3E;">
+              🛒
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="#home" onclick="showPage('home');">Home</a></li>
+            <li><a href="#featured-deals" onclick="showPage('home'); scrollToSection('featured-deals');">Featured Deals</a></li>
+            <li><a href="#about" onclick="showPage('about');">About Us</a></li>
+            <li><a href="#contact" onclick="showPage('contact');">Contact Us</a></li>
+            <li><a href="#blog" onclick="showPage('home'); scrollToSection('blog');">Blog Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Categories -->
+        <div>
+          <h3 class="footer-heading">Categories</h3>
+          <ul class="footer-links-list">
+            <li><a href="https://www.amazon.com/s?k=home+decor&tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored">🏠 Home Decor</a></li>
+            <li><a href="https://www.amazon.com/s?k=kitchen+gadgets&tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored">🍳 Kitchen Gadgets</a></li>
+            <li><a href="https://www.amazon.com/s?k=bedroom+decor&tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored">🛏️ Bedroom Decor</a></li>
+            <li><a href="https://www.amazon.com/s?k=home+lighting&tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored">💡 Lighting</a></li>
+            <li><a href="https://www.amazon.com/s?k=boho+decor&tag=sajjadtopdeal-20" target="_blank" rel="nofollow noopener sponsored">🌿 Boho Style</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Official Community -->
+        <div>
+          <h3 class="footer-heading">Join Our Community</h3>
+          <p style="font-size:0.88rem; color:#999999; margin-bottom:14px;">
+            Follow our Pinterest boards for daily home transformations and Amazon bargains!
+          </p>
+          <a href="https://www.pinterest.com/sajjadtopdeals/" target="_blank" rel="noopener noreferrer" class="btn-pinterest-header" style="width:100%; justify-content:center;">
+            📌 Follow on Pinterest
+          </a>
+        </div>
+      </div>
+
+      <!-- Compliance Disclosure Statement Block -->
+      <div class="footer-disclosure-block">
+        <strong>Amazon Associates Affiliate Disclosure:</strong> Sajjad Top Amazon Deals is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com and affiliated international Amazon sites (Tracking ID: <code>sajjadtopdeal-20</code>). As an Amazon Associate, we earn from qualifying purchases. Prices and availability are accurate as of the time of posting and are subject to change without prior notice.
+      </div>
+
+      <!-- Copyright & Bottom Links -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>Sajjad Top Amazon Deals</strong>. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#privacy" onclick="showPage('privacy');">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#disclosure" onclick="showPage('disclosure');">Affiliate Disclosure</a>
+          <span>&bull;</span>
+          <a href="#contact" onclick="showPage('contact');">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to top">↑</button>
+
+  <!-- Toast Notification element -->
+  <div class="toast-notice" id="toastNotice"></div>
+
+  <!-- ==========================================================================
+       JAVASCRIPT FUNCTIONALITY
+       ========================================================================== -->
+  <script>
+    // Page Routing / View Switcher
+    function showPage(pageId) {
+      const views = document.querySelectorAll('.page-view');
+      views.forEach(view => {
+        view.classList.remove('active');
+      });
+
+      const target = document.getElementById(pageId + '-view');
+      if (target) {
+        target.classList.add('active');
+      } else {
+        document.getElementById('home-view').classList.add('active');
+      }
+
+      // Update Nav active classes
+      document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + pageId) {
+          link.classList.add('active');
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Smooth Scroll to Section on Homepage
+    function scrollToSection(sectionId) {
+      showPage('home');
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+
+    // URL Hash change router
+    window.addEventListener('hashchange', () => {
+      const hash = window.location.hash.replace('#', '');
+      const validPages = ['home', 'about', 'contact', 'privacy', 'disclosure'];
+      if (validPages.includes(hash)) {
+        showPage(hash);
+      } else if (hash) {
+        // Section anchors on home
+        showPage('home');
+        const el = document.getElementById(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+
+    // Check hash on initial load
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (['about', 'contact', 'privacy', 'disclosure'].includes(hash)) {
+        showPage(hash);
+      } else {
+        showPage('home');
+      }
+    });
+
+    // Mobile Drawer Navigation
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+
+    function openMobileMenu() {
+      mobileDrawer.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      mobileDrawer.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+    if (mobileCloseBtn) mobileCloseBtn.addEventListener('click', closeMobileMenu);
+    if (mobileDrawer) {
+      mobileDrawer.addEventListener('click', (e) => {
+        if (e.target === mobileDrawer) closeMobileMenu();
+      });
+    }
+
+    // Sticky Header and Back to Top Button
+    const siteHeader = document.getElementById('siteHeader');
+    const backToTopBtn = document.getElementById('backToTopBtn');
+
+    window.addEventListener('scroll', () => {
+      const scrollPos = window.scrollY;
+
+      if (scrollPos > 40) {
+        siteHeader.classList.add('scrolled');
+      } else {
+        siteHeader.classList.remove('scrolled');
+      }
+
+      if (scrollPos > 400) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Toast Notification System
+    function showToast(message, emoji = '✨') {
+      const toast = document.getElementById('toastNotice');
+      toast.innerHTML = `<span>${emoji}</span> <span>${message}</span>`;
+      toast.classList.add('active');
+      setTimeout(() => {
+        toast.classList.remove('active');
+      }, 3500);
+    }
+
+    // Newsletter Submission Handler
+    function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      const input = e.target.querySelector('input[type="email"]');
+      if (input && input.value) {
+        showToast(`Thank you! Deal alerts will be sent to ${input.value}`, '🎉');
+        input.value = '';
+      }
+    }
+
+    // Contact Form Submission Handler
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value;
+      showToast(`Thank you, ${name}! Your message has been received.`, '💌');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
